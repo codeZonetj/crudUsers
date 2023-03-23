@@ -2,11 +2,11 @@ const {Sequelize} = require('sequelize');
 
 const db = new Sequelize({
     dialect:'postgres',
-    host:'https://crudusers.onrender.com',
+    host:'localhost',
     port:'5432',
     username:'postgres',
     password:'Lucianita1*',
-    database:'crudUsers'
+    database:'crudUsersLocal'
 
 })
 

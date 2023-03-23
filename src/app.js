@@ -4,7 +4,7 @@ const db = require('./utils/database')
 
 const userRouter = require('./users/users.router')
 
-const port = 5432;
+const port = 9000;
 const app = express();
 
 app.use(express.json())
