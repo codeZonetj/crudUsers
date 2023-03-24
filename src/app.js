@@ -1,6 +1,7 @@
 const express = require('express')
 const config = require('../config')
 const db = require('./utils/database')
+const cors = require('cors')
 
 const userRouter = require('./users/users.router')
 
@@ -8,6 +9,7 @@ const userRouter = require('./users/users.router')
 const app = express();
 
 app.use(express.json())
+app.use(cors())
 
 db.authenticate()
 .then(() => {
